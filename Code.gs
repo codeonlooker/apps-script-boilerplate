@@ -12,7 +12,7 @@ function onInstall() {
 }
 
 function openSidebar() {
-  var html = HtmlService.createTemplateFromFile('Sidebar')
+  let html = HtmlService.createTemplateFromFile('Sidebar')
     .evaluate();
   
   SpreadsheetApp.getUi().showSidebar(html);
